@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+header{
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: white;
+}
+
+.container-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    background-color: #fafafa;
+    border: none;
+    padding: 4px 30px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+
+nav ul li a img{
+    width: 25px;
+}
+
+nav ul li a .redondeada{
+    border-radius: 100%;
+    width: 25px;
+}
+
+.profile{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.container-profile{
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+
+.img-profile{
+    margin-right: 100px;
+}
+
+.img-profile img{
+    width: 180px;
+    border-radius: 100%;
+}
+
+.info-profile{
+    width: auto;
+}
+
+.info-profile .row-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.info-profile .row-1 p{
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+}
+
+.info-profile .row-1 p a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.info-profile .row-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-profile .row-2 p span{
+    font-weight: bold;
+}
+
+.info-profile .row-2 p{
+    font-weight: lighter;
+    margin-right: 20px;
+}
+
+
+.info-profile .row-3 p span{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+main{
+    width: 100%;
+    margin-top: 40px;
+}
+
+div.container-main{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 293px));
+    justify-content: space-between;
+    gap: 28px;
+}
+
+div.container-main .post img{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .container-main{
+        gap: 3px;
+    }
+    .container{
+        width: 100%;
+        padding: 8px;
+    }
+    .search input{
+        display: none;
+    }
+
+    .img-profile{
+        margin-right: 20px;
+    }
+    
+    .img-profile img{
+        width: 100px;
+    }
+}
